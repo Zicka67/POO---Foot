@@ -1,14 +1,14 @@
 <?php
-// spl_autoload_register(function ($class_name) {
+spl_autoload_register(function ($class_name) {
 
-//     require_once $class_name . '.php';
-// });
+    require_once $class_name . '.php';
+});
 
-require "club.php";
-require "country.php";
-require "mercato.php";
-require "nationality.php";
-require "player.php";
+// require "club.php";
+// require "country.php";
+// require "mercato.php";
+// require "nationality.php";
+// require "player.php";
 
 $Francais = new Nationality("Francaise");
 $Espagnol = new Nationality("Espagnole");
@@ -31,7 +31,6 @@ $Gameiro = new Player("Kevin", "Gameiro", "1987", $Francais);
 $Kane = new Player("Harry", "Kane", "1993", $Anglais);
 
 
-
 $psg = new Club("PSG", $France);
 $realmadrid = new Club("Real Madrid", $Espagne);
 $rcs = new Club("RCS", $France);
@@ -42,8 +41,6 @@ $manU = new Club("Manchester", $Angleterre);
 $mercato1 = new Mercato($psg, $Mbappe, "2017");
 $mercato2 = new Mercato($rcs, $Gameiro, "2008");
 $mercato3 = new Mercato($manU, $Kane, "2025");
-
-
 
 
 echo "<b>Afficher les clubs d'un pays :</b><br>";
