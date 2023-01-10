@@ -4,7 +4,7 @@ class Player
     private $lastName;
     private $firstName;
     private $birthDate;
-    private $nationality;
+    private $nationality;// ajouter par la suite
     private $clubs; // ajouter par la suite
     
     public function __Construct($lastName, $firstName, $birthDate, nationality $nationality)
@@ -49,7 +49,7 @@ class Player
     // POUR PASSER LES INFOS DE l'OBJET PLAYER EN STRING ( pour pouvoir l'afficher )
     public function __toString()
     {
-        return $this->lastName . " " . $this->firstName . " " . $this->birthDate;
+        return $this->lastName . " " . $this->firstName; //. " " . $this->birthDate
     }
     
     
