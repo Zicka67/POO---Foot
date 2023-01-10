@@ -2,29 +2,29 @@
 class Nationality
 {
     private string $nationalityName;
-    private $allPlayers;
+    
     
     public function __Construct(string $name)
     {
         $this->nationalityName = $name;
-        $this->allPlayers = [];
+        
     }
     
-    public function getAllPlayers()
+    public function getNationalityName(): string
     {
-        return $this->allPlayers;
+        return $this->nationalityName;
     }
     
-    public function setAllPlayers($allPlayers): self
+    public function setNationalityName(string $nationalityName): self
     {
-        $this->allPlayers = $allPlayers;
+        $this->nationalityName = $nationalityName;
         
         return $this;
-    }
-    
+    }  
     
     public function __toString()
     {
         return $this->nationalityName;
     }
+    
 }
