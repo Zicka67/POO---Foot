@@ -43,7 +43,7 @@ $mercato1 = new Mercato($psg, $Mbappe, "2017");
 $mercato2 = new Mercato($rcs, $Gameiro, "2008");
 $mercato3 = new Mercato($manU, $Kane, "2025");
 
-// RACING CLUB DE STRASBOURG PLAYERS
+
 
 
 echo "<b>Afficher les clubs d'un pays :</b><br>";
