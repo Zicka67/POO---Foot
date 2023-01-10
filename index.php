@@ -10,6 +10,7 @@ spl_autoload_register(function ($class_name) {
 // require "nationality.php";
 // require "player.php";
 
+
 $Francais = new Nationality("Francaise");
 $Espagnol = new Nationality("Espagnole");
 $Anglais = new Nationality("Anglaise");
@@ -46,10 +47,10 @@ $mercato3 = new Mercato($manU, $Kane, "2025");
 echo "<b>Afficher les clubs d'un pays :</b><br>";
 echo $France->afficherClubs();
 echo "<b>Afficher les joueurs d'un club : </b><br>";
-echo $rcs->getPlayers();
+echo $rcs->afficherPlayer();
 // echo "<b>Afficher les infos du joueur : </b><br>";
 // echo $Mbappe->getInfo();
 echo "<br><b>Afficher les clubs du joueur : </b>";
 echo $Gameiro->getClub();
 echo "<br><b>Afficher la nationalité du joueur :</b><br>";
-echo $Mbappe->getNationality();
+echo $Mbappe->afficherNationality();
