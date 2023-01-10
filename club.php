@@ -22,7 +22,7 @@ class Club
     {
         $result =  "Le club " . $this . " est composé des joueurs suivants :<br>";
         foreach ($this->mercatos as $players) {
-            $result .= $players . "<br>"; // le ".=" AJOUTE a la variable "$result" les keys "club" du tableau "clubs"
+            $result .= $players . "<br>"; 
         }
         return $result . "<br>";
     }
