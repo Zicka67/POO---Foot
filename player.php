@@ -37,7 +37,7 @@ class Player
         $result =  "<br>" . "Le joueur " . $this . " fait parti des clubs suivants : <br>";// la variable $result contient  " le joueur " . $this (l'objet courant) etc..
         foreach ($this->clubs as $club) // On parcours tous les elements (ici $club) de l'objet courant (ici le tab clubs)
         {
-            $result .= $club . "<br>"; // .= (concaténer) pour chaque element ($club) du tab, on l'ajoute a la var $result
+            $result .= "Le joueur " . $club . "<br>"; // .= (concaténer) pour chaque element ($club) du tab, on l'ajoute a la var $result
         }
         return $result; 
     }
