@@ -26,6 +26,7 @@ class Club
         foreach ($this->mercatos as $player) // On parcours tous les elements (ici $player) de l'objet courant (ici le tab mercatos)
         { 
             $result .= $player . "<br>"; // pour chaque element ($player) du tab, on l'ajoute a la var $result
+           
         }
         return $result . "<br>";
     }
