@@ -33,24 +33,25 @@ $Kane = new Player("Harry", "Kane", "1993", $Anglais);
 
 
 $psg = new Club("PSG", $France);
-$realmadrid = new Club("Real Madrid", $Espagne);
+$real = new Club("Real Madrid", $Espagne);
 $rcs = new Club("RCS", $France);
 $juventus = new Club("Juventus", $Italie);
 $manU = new Club("Manchester", $Angleterre);
 
 
-$mercato1 = new Mercato($psg, $Mbappe, "2017");
+$mercato1 = new Mercato($psg, $Messi, "2017");
 $mercato2 = new Mercato($rcs, $Gameiro, "2008");
-$mercato3 = new Mercato($manU, $Kane, "2025");
+$mercato3 = new Mercato($manU, $Kane, "2015");
+$mercato4 = new Mercato($real, $Messi, "2009");
 
 
 echo "<b>Afficher les clubs d'un pays :</b><br>";
 echo $France->afficherClubs();
 echo "<b>Afficher les joueurs d'un club : </b><br>";
-echo $rcs->afficherPlayer();
+echo $manU->afficherPlayer();
 // echo "<b>Afficher les infos du joueur : </b><br>";
 // echo $Mbappe->getInfo();
 echo "<br><b>Afficher les clubs du joueur : </b>";
-echo $Gameiro->getClub();
+echo $Messi->getClub();
 echo "<br><b>Afficher la nationalité du joueur :</b><br>";
 echo $Mbappe->afficherNationality();
